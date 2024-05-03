@@ -20,7 +20,7 @@ public class RequestParamServlet extends HttpServlet {
         System.out.println("RequestPramServlet.servicer");
 
         System.out.println("[전체 파라미터 조회] - start");
-        request.getParameterNames().asIterator()
+        parameterNames.asIterator()
                         .forEachRemaining(paraName -> System.out.println(paraName + "=" + request.getParameter(paraName)));
 
         System.out.println("[전체 파라미터 조회] - end");
